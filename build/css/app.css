@@ -1,0 +1,240 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: hsl(210deg, 46%, 95%);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 10rem auto;
+}
+@media (max-width: 375px) {
+  .contenedor {
+    width: 95%;
+  }
+}
+@media (max-width: 411px) {
+  .contenedor {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor {
+    width: 95%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+}
+.main .main_testimonio {
+  border-radius: 1rem;
+  padding: 3rem;
+}
+.main .encabezado {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.main .encabezado img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.main .testUno {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background: hsl(263deg, 55%, 52%);
+  position: relative;
+}
+@media (max-width: 768px) {
+  .main .testUno {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 375px) {
+  .main .testUno {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+.main .comilla {
+  position: absolute;
+  right: 10rem;
+  top: 0;
+  z-index: 0;
+}
+@media (max-width: 375px) {
+  .main .comilla {
+    right: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .main .comilla {
+    right: 2rem;
+  }
+}
+.main .testDos {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background: hsl(217deg, 19%, 35%);
+}
+@media (max-width: 768px) {
+  .main .testDos {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 375px) {
+  .main .testDos {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+.main .testTres {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: hsl(0deg, 0%, 100%);
+}
+@media (max-width: 768px) {
+  .main .testTres {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 375px) {
+  .main .testTres {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+.main .testCuatro {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  background: hsl(219deg, 29%, 14%);
+}
+@media (max-width: 768px) {
+  .main .testCuatro {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 375px) {
+  .main .testCuatro {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}
+.main .testCinco {
+  grid-column: 4/5;
+  grid-row: 1/3;
+  background: hsl(0deg, 0%, 100%);
+}
+@media (max-width: 768px) {
+  .main .testCinco {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}
+@media (max-width: 375px) {
+  .main .testCinco {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+}
+.main .testUno img, .main .testCuatro img {
+  border: 3px solid hsl(263deg, 55%, 52%);
+}
+.main .testDos img, .main .testTres img, .main .testCinco img {
+  border: 3px solid hsl(0deg, 0%, 81%);
+}
+
+.name_perfil {
+  color: hsl(0deg, 0%, 81%);
+  font-weight: 600;
+}
+.name_perfil p {
+  margin: 0rem;
+}
+.name_perfil .nombre {
+  font-size: 1.5rem;
+}
+.name_perfil .verified {
+  opacity: 0.5;
+  font-size: 1.3rem;
+}
+
+.testTres .name_perfil, .testCinco .name_perfil {
+  color: hsl(217deg, 19%, 35%);
+}
+
+.testimonio .titulo_testimonio {
+  font-size: 2.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.testimonio .contenido_testimonio {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-top: 2rem;
+}
+.testimonio p {
+  margin: 0rem;
+}
+
+.grupoWhite {
+  color: hsl(217deg, 19%, 35%);
+}
+
+.grupoColor {
+  color: hsl(0deg, 0%, 100%);
+}
